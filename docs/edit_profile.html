@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>自分のプロフィール編集 - ともだちのたね</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="app-container">
+    <header class="app-header">
+      <h1>自分のプロフィール</h1>
+      <a href="./home.html" class="btn btn-primary" style="padding: 4px 12px; font-size: 0.85rem;">保存</a>
+    </header>
+
+    <main class="content">
+      <div class="avatar-container">
+        <img src="./images/default_avatar.png" alt="プロフィール画像" class="avatar-img">
+      </div>
+
+      <form onsubmit="return false;">
+        <div class="form-group">
+          <label>★名前 / ニックネーム</label>
+          <input type="text" class="form-control" value="サンプル太郎">
+        </div>
+
+        <div class="form-group">
+          <label>★誕生日</label>
+          <input type="text" class="form-control" value="4月1日">
+        </div>
+
+        <div class="form-group">
+          <label>★星座</label>
+          <input type="text" class="form-control" value="おひつじ座">
+        </div>
+
+        <div class="form-group">
+          <label>★血液型</label>
+          <input type="text" class="form-control" value="A型">
+        </div>
+
+        <div class="form-group">
+          <label>★性別</label>
+          <input type="text" class="form-control" value="未選択">
+        </div>
+
+        <div class="form-group">
+          <label>好きな〇〇トップ3</label>
+          <input type="text" class="form-control" style="margin-bottom: 6px;" value="1位: サンプルソング">
+          <input type="text" class="form-control" style="margin-bottom: 6px;" value="2位: サンプルゲーム">
+          <input type="text" class="form-control" value="3位: サンプルスポーツ">
+        </div>
+
+        <div class="form-group">
+          <label>趣味</label>
+          <input type="text" class="form-control" value="読書">
+        </div>
+
+        <div class="form-group">
+          <label>ハマっていること</label>
+          <input type="text" class="form-control" value="写真撮影">
+        </div>
+
+        <div class="form-group">
+          <label>音楽</label>
+          <input type="text" class="form-control" value="サンプルポップス">
+        </div>
+
+        <div class="form-group">
+          <label>MBTI</label>
+          <input type="text" class="form-control" value="ENFP">
+        </div>
+
+        <div class="form-group">
+          <label>将来の夢</label>
+          <input type="text" class="form-control" value="サンプル職業">
+        </div>
+
+        <div class="form-group">
+          <label>★ex) 自分の第一印象</label>
+          <input type="text" class="form-control" value="明るい人">
+        </div>
+      </form>
+    </main>
+    <footer class="nav-bar">
+      <a href="./add_friend.html" class="nav-link">友達追加</a>
+      <a href="./friend_profile.html" class="nav-link">友達プロフィール</a>
+      <a href="./home.html" class="nav-link">戻る</a>
+    </footer>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>

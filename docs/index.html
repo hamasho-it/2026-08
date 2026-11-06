@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ログイン - ともだちのたね</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="app-container">
+    <main class="content" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding-top: 60px;">
+      <h1 style="font-size: 1.8rem; margin-bottom: 10px; color: #111827;">ともだちのたね</h1>
+      <p style="font-size: 0.85rem; color: #6b7280; margin-bottom: 40px; max-width: 280px; line-height: 1.5;">
+        新しい環境で自然に話しかけるきっかけを作るプロフィール帳アプリ
+      </p>
+
+      <div style="width: 100%; max-width: 310px; display: flex; flex-direction: column; gap: 16px;">
+        <div class="form-group" style="text-align: left;">
+          <label>メールアドレス</label>
+          <input type="email" class="form-control" value="user_a@example.com" placeholder="example@domain.com">
+        </div>
+        <div class="form-group" style="text-align: left;">
+          <label>パスワード</label>
+          <input type="password" class="form-control" value="••••••••" placeholder="パスワード">
+        </div>
+
+        <a href="./home.html" class="btn btn-primary btn-block" style="padding: 12px; margin-top: 10px;">ログイン</a>
+        <a href="./signup.html" class="btn btn-secondary btn-block" style="padding: 12px;">新規登録</a>
+      </div>
+    </main>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>

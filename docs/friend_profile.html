@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>友達のプロフィール観覧 - ともだちのたね</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="app-container">
+    <header class="app-header">
+      <h1 id="friend-name-header">利用者A</h1>
+      <div class="header-actions">
+        <button class="icon-btn" id="heart-toggle" aria-label="いいね">
+          <img src="./images/icon_heart_outline.png" alt="いいね">
+        </button>
+        <button class="icon-btn settings-btn" aria-label="設定">
+          <img src="./images/icon_settings.png" alt="設定">
+        </button>
+      </div>
+    </header>
+
+    <main class="content">
+      <div class="card-nav">
+        <button class="card-nav-btn" id="prev-friend">◀ 前へ</button>
+        <span style="font-size: 0.8rem; color: #64748b; font-weight: 600;">カードをめくる</span>
+        <button class="card-nav-btn" id="next-friend">次へ ▶</button>
+      </div>
+
+      <div class="card-deck">
+        <!-- 友達A -->
+        <div class="friend-card-content" data-name="利用者A">
+          <div class="avatar-container">
+            <img src="./images/friend_avatar_a.png" alt="利用者A" class="avatar-img">
+          </div>
+
+          <div class="profile-card">
+            <div class="profile-info-list">
+              <div class="info-item"><span class="info-label">誕生日</span><span class="info-value">5月5日</span></div>
+              <div class="info-item"><span class="info-label">星座</span><span class="info-value">おうし座</span></div>
+              <div class="info-item"><span class="info-label">血液型</span><span class="info-value">B型</span></div>
+              <div class="info-item"><span class="info-label">性別</span><span class="info-value">回答しない</span></div>
+
+              <div style="margin-top: 12px; margin-bottom: 6px; font-weight: 600; color: #4b5563; font-size: 0.85rem;">好きな〇〇トップ3</div>
+              <div class="info-item"><span class="info-label">1位</span><span class="info-value">サンプル映画</span></div>
+              <div class="info-item"><span class="info-label">2位</span><span class="info-value">サンプルアニメ</span></div>
+              <div class="info-item"><span class="info-label">3位</span><span class="info-value">サンプル本</span></div>
+
+              <div class="info-item" style="margin-top: 12px;"><span class="info-label">趣味 / ハマっていること</span><span class="info-value">カフェ巡り</span></div>
+              <div class="info-item"><span class="info-label">音楽</span><span class="info-value">サンプルロック</span></div>
+              <div class="info-item"><span class="info-label">MBTI</span><span class="info-value">INFJ</span></div>
+              <div class="info-item"><span class="info-label">将来の夢</span><span class="info-value">デザイナー</span></div>
+              <div class="info-item" style="margin-top: 12px;"><span class="info-label">ex) 自分の第一印象</span><span class="info-value">怖い人</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 友達B -->
+        <div class="friend-card-content" data-name="利用者B" style="display: none;">
+          <div class="avatar-container">
+            <img src="./images/friend_avatar_b.png" alt="利用者B" class="avatar-img">
+          </div>
+
+          <div class="profile-card">
+            <div class="profile-info-list">
+              <div class="info-item"><span class="info-label">誕生日</span><span class="info-value">8月10日</span></div>
+              <div class="info-item"><span class="info-label">星座</span><span class="info-value">しし座</span></div>
+              <div class="info-item"><span class="info-label">血液型</span><span class="info-value">O型</span></div>
+              <div class="info-item"><span class="info-label">性別</span><span class="info-value">回答しない</span></div>
+
+              <div style="margin-top: 12px; margin-bottom: 6px; font-weight: 600; color: #4b5563; font-size: 0.85rem;">好きな〇〇トップ3</div>
+              <div class="info-item"><span class="info-label">1位</span><span class="info-value">サンプルスイーツ</span></div>
+              <div class="info-item"><span class="info-label">2位</span><span class="info-value">サンプル旅行</span></div>
+              <div class="info-item"><span class="info-label">3位</span><span class="info-value">サンプル音楽</span></div>
+
+              <div class="info-item" style="margin-top: 12px;"><span class="info-label">趣味 / ハマっていること</span><span class="info-value">ダンス</span></div>
+              <div class="info-item"><span class="info-label">音楽</span><span class="info-value">サンプルJ-POP</span></div>
+              <div class="info-item"><span class="info-label">MBTI</span><span class="info-value">ESTP</span></div>
+              <div class="info-item"><span class="info-label">将来の夢</span><span class="info-value">サンプルイラストレーター</span></div>
+              <div class="info-item" style="margin-top: 12px;"><span class="info-label">ex) 自分の第一印象</span><span class="info-value">優しい人</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="nav-bar">
+      <a href="./add_friend.html" class="nav-link">友達追加</a>
+      <a href="./home.html" class="nav-link">戻る</a>
+      <a href="./edit_profile.html" class="nav-link">プロフィール編集</a>
+    </footer>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
